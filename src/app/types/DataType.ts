@@ -8,3 +8,9 @@ export type ServicesType = {
     icon: string,
     name: string
 }
+
+export type StatsType = {
+    icon: string,
+    number: number,
+    name: string
+}

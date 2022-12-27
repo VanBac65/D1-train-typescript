@@ -1,0 +1,11 @@
+.footer-left {
+
+}
+
+.footer-left p title {
+    font-weight: 500;
+    display: inline-block;
+    min-width: 70px;
+    margin-right: 10px;
+    color: #2947A9;
+}

@@ -1,17 +1,25 @@
-import { ReactElement } from "react";
-import { AboutUs } from "../components/elements/aboutUs/AboutUs";
-import { Banner } from "../components/elements/banner/BannerContainer";
-import { Header } from "../components/elements/header/HeaderContainer";
-import { OutReputation } from "../components/elements/outReputation/OutReputation";
-import "./Home.css"
+import { FC, ReactElement } from "react";
+import AboutUs from "app/components/modules/aboutUs/AboutUs";
+import Banner from "app/components/modules/banner/BannerContainer";
+import ContactUs from "app/components/modules/contactUs/ContactUs";
+import Footer from "app/components/modules/footer/Footer";
+import Header from "app/components/modules/header/HeaderContainer";
+import OutReputation from "app/components/modules/outReputation/OutReputation";
+import Services from "app/components/modules/services/Services";
+import "app/pages/Home.css"
 
-export const Home = (): ReactElement => {
+const Home: FC = (): ReactElement => {
     return (
         <div className="home">
             <Header />
             <Banner />
             <OutReputation />
             <AboutUs />
+            <Services />
+            <ContactUs />
+            <Footer />
         </div>
     )
 }
+
+export default Home;

@@ -1,0 +1,40 @@
+.contact-us-left {
+    position: relative;
+    width: 50%;
+    width: 100%;
+    height: 530px;
+}
+
+.stat {
+    position: absolute;
+    box-shadow: 0 0 10px rgba(17, 24, 39, 0.1);
+    background-color: #FFFFFF;
+}
+
+.stat:nth-child(1) {
+    width: 205px;
+    z-index: 1;
+    left: 375px;
+    top : 90px;
+}
+
+.stat:nth-child(2) {
+    width: 264px;
+    z-index: 0;
+    left: 155px;
+    top : 161px;
+}
+
+.stat:nth-child(3) {
+    width: 202px;
+    z-index: 1;
+    left: 355px;
+    top : 266px;
+}
+
+.stat:nth-child(4) {
+    width: 250px;
+    z-index: 0;
+    left: 190px;
+    top : 343px;
+}
