@@ -1,10 +1,9 @@
-import { StatsType } from "app/types/DataType"
 import icon1 from "public/images/contactUs/illus.png"
 import icon2 from "public/images/contactUs/illus (1).png"
 import icon3 from "public/images/contactUs/illus (2).png"
 import icon4 from "public/images/contactUs/illus (3).png"
 
-export const dataStats: StatsType[] = [
+const dataStats = [
     {
         icon: icon1,
         number: 84,
@@ -26,3 +25,5 @@ export const dataStats: StatsType[] = [
         name: "Years in Business"
     }
 ]
+
+export default dataStats;

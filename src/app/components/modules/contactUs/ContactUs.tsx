@@ -1,7 +1,7 @@
 import { FC, ReactElement } from "react";
-import ContactUsLeft from "./contactUsLeft/ContactUsLeft";
-import ContactUsRight from "./contactUsRight/ContactUsRight";
-import "app/components/modules/contactUs/ContactUs.css"
+import ContactUsLeft from "app/components/modules/contactUs/contactUsLeft/ContactUsLeft";
+import ContactUsRight from "app/components/modules/contactUs/contactUsRight/ContactUsRight";
+import "app/styles/ContactUs.css"
 
 const ContactUs: FC = (): ReactElement => {
     return (

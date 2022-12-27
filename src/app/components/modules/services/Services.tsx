@@ -1,8 +1,8 @@
 import { FC, ReactElement } from "react";
-import { dataServices } from "app/const/services";
+import dataServices from "app/const/services";
 import Service from "app/components/modules/services/service/Service";
 import { ServicesType } from "app/types/DataType";
-import "app/components/modules/services/Services.css"
+import "app/styles/Services.css"
 
 const Services: FC = (): ReactElement => {
   return (

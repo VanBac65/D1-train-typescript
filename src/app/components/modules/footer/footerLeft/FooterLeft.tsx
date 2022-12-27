@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import Logo from "app/components/elements/common/logo/Logo";
-import "app/components/modules/footer/footerLeft/FooterLeft.css"
+import "app/styles/FooterLeft.css"
 
 const FooterLeft: FC = (): ReactElement => {
     return (

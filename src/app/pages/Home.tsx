@@ -6,8 +6,7 @@ import Footer from "app/components/modules/footer/Footer";
 import Header from "app/components/modules/header/HeaderContainer";
 import OutReputation from "app/components/modules/outReputation/OutReputation";
 import Services from "app/components/modules/services/Services";
-import "app/pages/Home.css"
-
+import "app/styles/Home.css"
 const Home: FC = (): ReactElement => {
     return (
         <div className="home">

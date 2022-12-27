@@ -4,9 +4,8 @@ import icon3 from "public/images/services/icon (2).png"
 import icon4 from "public/images/services/icon (3).png"
 import icon5 from "public/images/services/icon (4).png"
 import icon6 from "public/images/services/icon (5).png"
-import { ServicesType } from "app/types/DataType"
 
-export const dataServices: ServicesType[] = [
+const dataServices = [
     {
         icon: icon1,
         name: "Construction"
@@ -32,3 +31,5 @@ export const dataServices: ServicesType[] = [
         name: "Electric"
     }
 ]
+
+export default dataServices;

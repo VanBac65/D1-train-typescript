@@ -1,13 +1,13 @@
 import { FC, ReactElement } from "react";
 import { ReasonType } from "app/types/DataType";
-import "./Reason.css"
+import "app/styles/Reason.css"
 
-const Reason: FC<ReasonType> = (props): ReactElement => {
+const Reason: FC<ReasonType> = (reason: ReasonType): ReactElement => {
     return (
         <>
-            <img src={props.icon} alt="" />
-            <p className="reason-name">{props.name}</p>
-            <p className="reason-description">{props.description}</p>
+            <img src={reason.icon} alt="" />
+            <p className="reason-name">{reason.name}</p>
+            <p className="reason-description">{reason.description}</p>
         </>
     )
 }

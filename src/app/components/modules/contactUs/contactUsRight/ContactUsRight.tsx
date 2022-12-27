@@ -1,5 +1,5 @@
 import { FC, ReactElement } from "react";
-import "app/components/modules/contactUs/contactUsRight/ContactUsRight.css"
+import "app/styles/ContactUsRight.css"
 
 const ContactUsRight: FC = (): ReactElement => {
     return (

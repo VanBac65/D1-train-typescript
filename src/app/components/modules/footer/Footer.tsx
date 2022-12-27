@@ -2,7 +2,7 @@ import { FC, ReactElement } from "react";
 import FooterLeft from "app/components/modules/footer/footerLeft/FooterLeft";
 import FooterRight from "app/components/modules/footer/footerRight/FooterRight";
 import CopyRight from "app/components/elements/footer/copyRight/CopyRight";
-import "app/components/modules/footer/Footer.css"
+import "app/styles/Footer.css"
 
 const Footer: FC = (): ReactElement => {
     return (

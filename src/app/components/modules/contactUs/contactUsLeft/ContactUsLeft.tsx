@@ -1,8 +1,8 @@
 import { FC, ReactElement } from "react";
-import { dataStats } from "app/const/stats";
-import Stat from "./stat/Stat";
+import dataStats from "app/const/stats";
+import Stat from "app/components/modules/contactUs/contactUsLeft/stat/Stat";
 import { StatsType } from "app/types/DataType";
-import "app/components/modules/contactUs/contactUsLeft/ContactUsLeft.css"
+import "app/styles/ContactUsLeft.css"
 
 const ContactUsLeft: FC = (): ReactElement => {
     return (
