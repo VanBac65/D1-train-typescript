@@ -14,3 +14,9 @@ export type StatsType = {
     number: number,
     name: string
 }
+
+export type ProjectsType = {
+    imgPath: string,
+    name: string,
+    address: string
+}

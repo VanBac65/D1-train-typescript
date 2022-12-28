@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import Reasons from "app/components/modules/outReputation/reasons/Reasons";
-import "app/styles/OutReputation.css"
+import "app/styles/outReputation/OutReputation.css"
 
 const OutReputation: FC = (): ReactElement => {
     return (

@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import AboutUsButton from "app/components/elements/aboutUs/aboutUsButton/AboutUsButton";
-import "app/styles/AboutUsDescription.css"
+import "app/styles/aboutUs/AboutUsDescription.css"
 
 const AboutUsDescription: FC = (): ReactElement => {
   return (

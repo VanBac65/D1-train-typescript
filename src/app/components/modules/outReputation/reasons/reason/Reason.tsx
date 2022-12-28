@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import { ReasonType } from "app/types/DataType";
-import "app/styles/Reason.css"
+import "app/styles/outReputation/Reason.css"
 
 const Reason: FC<ReasonType> = (reason: ReasonType): ReactElement => {
     return (

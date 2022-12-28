@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import { StatsType } from "app/types/DataType";
-import "app/styles/Stat.css"
+import "app/styles/contactUs/Stat.css"
 
 const Stat: FC<StatsType> = (stat: StatsType): ReactElement => {
     return (

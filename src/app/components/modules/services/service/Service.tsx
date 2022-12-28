@@ -1,10 +1,10 @@
 import { FC, ReactElement } from "react";
 import underline from "public/images/services/Rectangle 18.png"
 import { ServicesType } from "app/types/DataType";
-import "app/styles/Service.css"
+import "app/styles/services/Service.css"
 
 const Service: FC<ServicesType> = (service: ServicesType): ReactElement => {
-    return (
+    return (    
         <>
             <img className="service-icon" src={service.icon} alt="" />
             <img className="service-underline" src={underline} alt="" />

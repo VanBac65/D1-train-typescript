@@ -2,7 +2,7 @@ import { FC, ReactElement } from "react";
 import Reason from "app/components/modules/outReputation/reasons/reason/Reason";
 import dataReasons from "app/const/reasons";
 import { ReasonType } from "app/types/DataType";
-import "app/styles/Reasons.css"
+import "app/styles/outReputation/Reasons.css"
 
 const Reasons: FC = (): ReactElement => {
     return (

@@ -1,5 +1,5 @@
 import { FC, ReactElement } from "react";
-import "app/styles/HeaderNav.css"
+import "app/styles/header/HeaderNav.css"
 
 const nav: string[] = ['Home', 'About Us', 'Project', 'Services', 'Contact Us']
 

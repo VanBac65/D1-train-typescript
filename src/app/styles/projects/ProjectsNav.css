@@ -1,0 +1,25 @@
+.projects-nav {
+    width: 20%;
+    padding: 0 10%;
+}
+
+.projects-nav h1 {
+    width: max-content;
+}
+
+.projects-nav ul {
+    padding-bottom: 20px;
+}
+
+.projects-nav ul li {
+    display: block;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.project-nav-item button{
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 17px;
+    color: #C2C7D6;
+}

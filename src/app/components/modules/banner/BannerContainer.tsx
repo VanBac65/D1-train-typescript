@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import backGroundImage from "public/images/banner/Hero.png"
-import "app/components/modules/banner/BannerContainer.css"
+import "app/styles/banner/BannerContainer.css"
 
 const Banner: FC = (): ReactElement => {
     return (

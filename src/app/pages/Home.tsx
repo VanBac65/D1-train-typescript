@@ -6,7 +6,9 @@ import Footer from "app/components/modules/footer/Footer";
 import Header from "app/components/modules/header/HeaderContainer";
 import OutReputation from "app/components/modules/outReputation/OutReputation";
 import Services from "app/components/modules/services/Services";
-import "app/styles/Home.css"
+import Projects from "app/components/modules/projects/Projects";
+import "app/styles/home/Home.css"
+
 const Home: FC = (): ReactElement => {
     return (
         <div className="home">
@@ -16,6 +18,7 @@ const Home: FC = (): ReactElement => {
             <AboutUs />
             <Services />
             <ContactUs />
+            <Projects />
             <Footer />
         </div>
     )
