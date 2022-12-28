@@ -20,6 +20,16 @@
   flex-wrap: wrap;
 }
 
+.projects-slide a {
+  width: 35%;
+}
+
+.projects-slide button {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #292e3d;
+}
+
 .projects-slide-item {
   width: 45%;
   margin-bottom: 5%;
@@ -44,11 +54,8 @@
   margin-top: 10px;
 }
 
-.projects-nav ul li > button {
+.projects-nav ul li button {
   text-align: start;
-}
-
-.project-nav-item button {
   border: none;
   background-color: #ffffff;
   font-size: 17px;

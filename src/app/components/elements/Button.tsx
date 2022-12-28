@@ -1,19 +1,20 @@
 import { FC, ReactElement } from "react";
-import btnBack from "public/images/button/Back.png";
-import btnNext from "public/images/button/Next.png";
 import "app/styles/elements/Button.css";
 
 type ButtonType = {
   title: string;
+  icon?: string;
 };
 
-const Button: FC<ButtonType> = ({ title }: ButtonType): ReactElement => {
+const Button: FC<ButtonType> = ({ title, icon }: ButtonType): ReactElement => {
   return (
-    <button>
-      {title === "Back" && <img src={btnBack} alt="" />}
-      <label>{title}</label>
-      {title === "Next" && <img src={btnNext} alt="" />}
-    </button>
+    <a href="/">
+      <button>
+        {title === "Back" && <img src={icon} alt="" />}
+        <label>{title}</label>
+        {title === "Next" && <img src={icon} alt="" />}
+      </button>
+    </a>
   );
 };
 

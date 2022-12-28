@@ -25,14 +25,18 @@
   color: #525b7a;
 }
 
-.contact-us-right button {
+.contact-us-right a {
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.contact-us-right a button {
   color: #ffffff;
   padding: 11px 30px;
   border: none;
   background-color: #2947a9;
   border-radius: 4px;
-  margin-top: 40px;
-  width: 66%;
+  width: 100%;
 }
 
 .stat {

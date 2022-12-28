@@ -1,20 +1,33 @@
 import { FC, ReactElement } from "react";
 import dataStats from "app/const/stats";
-import Button from "app/components/elements/Button";
-import { StatsType } from "app/types/dataType";
-import ContactUsStat from "../elements/ContactUsStat";
 import "app/styles/modules/ContactUs.css";
+import Button from "../elements/Button";
 
-type StatsProps = StatsType;
+type StatsType = {
+  icon: string;
+  number: number;
+  name: string;
+};
 
 const ContactUs: FC = (): ReactElement => {
+  const Stat: FC<StatsType> = (stat: StatsType): ReactElement => {
+    return (
+      <>
+        <h1>{stat.number}</h1>
+        <span></span>
+        <label>{stat.name}</label>
+        <img src={stat.icon} alt="" />
+      </>
+    );
+  };
+
   return (
     <div className="contact-us">
       <div className="contact-us-left">
-        {dataStats.map((stat: StatsProps, index: number): ReactElement => {
+        {dataStats.map((stat: StatsType, index: number): ReactElement => {
           return (
             <div className="stat" key={index}>
-              <ContactUsStat {...stat} />
+              <Stat {...stat} />
             </div>
           );
         })}

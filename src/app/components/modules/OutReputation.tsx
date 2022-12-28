@@ -1,17 +1,28 @@
 import { FC, ReactElement } from "react";
 import dataReasons from "app/const/reasons";
-import { ReasonType } from "app/types/dataType";
-import Reason from "app/components/elements/Reason";
 import "app/styles/modules/OutReputation.css";
 
-type ReasonProps = ReasonType;
+export type ReasonType = {
+  icon: string;
+  name: string;
+  description: string;
+};
 
 const OutReputation: FC = (): ReactElement => {
+  const Reason: FC<ReasonType> = (reason: ReasonType): ReactElement => {
+    return (
+      <>
+        <img src={reason.icon} alt="" />
+        <p className="reason-name">{reason.name}</p>
+        <p className="reason-description">{reason.description}</p>
+      </>
+    );
+  };
   return (
     <div className="out-reputation">
       <p className="out-reputation-title">Our Reputation</p>
       <div className="reasons">
-        {dataReasons.map((reason: ReasonProps, index: number): ReactElement => {
+        {dataReasons.map((reason: ReasonType, index: number): ReactElement => {
           return (
             <div className="reason" key={index}>
               <Reason {...reason} />

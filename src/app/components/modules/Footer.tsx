@@ -3,8 +3,8 @@ import facebook from "public/images/footer/Vector.png";
 import instagram from "public/images/footer/Vector-1.png";
 import twitter from "public/images/footer/Vector-2.png";
 import Logo from "app/components/elements/Logo";
-import Button from "../elements/Button";
 import "app/styles/modules/Footer.css";
+import Button from "../elements/Button";
 
 const Footer: FC = (): ReactElement => {
   return (

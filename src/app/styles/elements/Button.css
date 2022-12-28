@@ -1,17 +1,15 @@
-button {
+a {
   color: #fff;
-  width: 35%;
-  background-color: #292e3d;
-  border: none;
-  padding: 15px 0px;
+  display: inline-block;
+  text-align: center;
 }
-
-button label {
-  margin-right: 5px;
-}
-
-button img {
+a img {
   position: relative;
   top: 2px;
   margin-right: 5px;
+}
+
+a button {
+  border: none;
+  color: #fff;
 }
