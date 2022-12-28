@@ -1,0 +1,24 @@
+.contact-us-right {
+    width: 260px;
+    margin-top: 125px;
+    margin-right: 100px;
+}
+
+.contact-us-right h1 {
+    font-size: 40px;
+    color: #2947A9;
+    text-align: start;
+}
+
+.contact-us-right p {
+    color: #525B7A;
+}
+
+.contact-us-right button {
+    color: #FFFFFF;
+    padding: 11px 30px;
+    border: none;
+    background-color: #2947A9;
+    border-radius: 4px;
+    margin-top: 40px;
+}
