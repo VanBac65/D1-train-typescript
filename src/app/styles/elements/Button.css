@@ -1,0 +1,17 @@
+button {
+  color: #fff;
+  width: 35%;
+  background-color: #292e3d;
+  border: none;
+  padding: 15px 0px;
+}
+
+button label {
+  margin-right: 5px;
+}
+
+button img {
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
