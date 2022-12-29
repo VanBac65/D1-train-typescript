@@ -1,5 +1,5 @@
 import { FC, ReactElement } from "react";
-import "app/styles/elements/Button.css";
+import "app/styles/elements/button.css";
 
 type ButtonType = {
   title: string;
