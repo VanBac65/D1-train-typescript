@@ -13,6 +13,7 @@ import dataStats from "app/const/stats";
 import dataProjects from "app/const/projects";
 import dataReasons from "app/const/reasons";
 import FormUser from "app/components/modules/FormUser";
+import Consultation from "app/components/modules/Consultation";
 import "app/styles/home/homePage.css";
 
 const navProjects = ["All", "Commercial", "Residential", "Other"];
@@ -51,6 +52,7 @@ const Home: FC = (): ReactElement => {
       </div>
       <ServiceList services={dataServices} />
       <ContactUs statList={dataStats} />
+      <Consultation />
       <Projects menu={navProjects} projects={dataProjects} />
       <FormUser items={inputPlaceholder} />
       <Footer />

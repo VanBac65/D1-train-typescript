@@ -16,6 +16,9 @@ type ProjectsProps = {
 };
 
 const Projects: FC<ProjectsProps> = ({ menu, projects }): ReactElement => {
+  const handleBackHome = () => {
+    window.scroll(0, 0);
+  };
   return (
     <div className="projects">
       <h1>Projects</h1>
@@ -43,11 +46,11 @@ const Projects: FC<ProjectsProps> = ({ menu, projects }): ReactElement => {
               </div>
             );
           })}
-          <Button>
+          <Button onClick={handleBackHome}>
             <img src={btnBack} alt="" />
             Back
           </Button>
-          <Button>
+          <Button onClick={handleBackHome}>
             Next
             <img src={btnNext} alt="" />
           </Button>

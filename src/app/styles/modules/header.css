@@ -18,6 +18,11 @@
   list-style: none;
 }
 
+.header-nav ul li {
+  color: #14171f;
+  text-decoration: none;
+}
+
 .header-nav ul li:nth-child(5) {
   color: #f9995d;
 }

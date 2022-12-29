@@ -6,14 +6,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: FC<ButtonProps> = ({ children, ...props }): ReactElement => {
-  const handleBackHome = () => {
-    window.scroll(0, 0);
-  };
-  return (
-    <button onClick={handleBackHome} {...props}>
-      {children}
-    </button>
-  );
+  return <button {...props}>{children}</button>;
 };
 
 export default Button;
