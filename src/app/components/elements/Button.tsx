@@ -6,13 +6,17 @@ type ButtonType = {
   icon?: string;
 };
 
-const Button: FC<ButtonType> = ({ title, icon }: ButtonType): ReactElement => {
+type ButtonProps = {
+  item: ButtonType;
+};
+
+const Button: FC<ButtonProps> = ({ item }): ReactElement => {
   return (
     <a href="/">
       <button>
-        {title === "Back" && <img src={icon} alt="" />}
-        <label>{title}</label>
-        {title === "Next" && <img src={icon} alt="" />}
+        {item.title === "Back" && <img src={item.icon} alt="" />}
+        <label>{item.title}</label>
+        {item.title === "Next" && <img src={item.icon} alt="" />}
       </button>
     </a>
   );
