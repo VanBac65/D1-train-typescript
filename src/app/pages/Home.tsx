@@ -1,4 +1,4 @@
-import { FC, ReactElement, useEffect } from "react";
+import { FC, ReactElement } from "react";
 import ContactUs from "app/components/modules/ContactUs";
 import Footer from "app/components/modules/Footer";
 import Header from "app/components/modules/HeaderContainer";
