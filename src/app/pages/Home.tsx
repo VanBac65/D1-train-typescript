@@ -13,7 +13,6 @@ import dataStats from "app/const/stats";
 import dataProjects from "app/const/projects";
 import dataReasons from "app/const/reasons";
 import FormUser from "app/components/modules/FormUser";
-import Consultation from "app/components/modules/Consultation";
 import "app/styles/home/homePage.css";
 
 const navProjects = ["All", "Commercial", "Residential", "Other"];
@@ -52,7 +51,13 @@ const Home: FC = (): ReactElement => {
       </div>
       <ServiceList services={dataServices} />
       <ContactUs statList={dataStats} />
-      <Consultation />
+      <div className="consultation">
+        <div className="consultation-text">
+          <h1>Free consultation with exceptional quality</h1>
+          <label>Just one call away: +84 1102 2703</label>
+        </div>
+        <Button>Get your consultation</Button>
+      </div>
       <Projects menu={navProjects} projects={dataProjects} />
       <FormUser items={inputPlaceholder} />
       <Footer />
