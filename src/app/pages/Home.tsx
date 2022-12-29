@@ -13,7 +13,7 @@ import dataStats from "app/const/stats";
 import dataProjects from "app/const/projects";
 import dataReasons from "app/const/reasons";
 import FormUser from "app/components/modules/FormUser";
-import "app/styles/home/home.css";
+import "app/styles/home/homePage.css";
 
 const navProjects = ["All", "Commercial", "Residential", "Other"];
 const navHeader = ["Home", "About Us", "Projects", "Services", "Contact Us"];
