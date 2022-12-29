@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import Button from "app/components/elements/Button";
-import "app/styles/modules/contactUs.css";
+import "app/styles/modules/contact.css";
 
 type StatsType = {
   icon: string;

@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import underline from "public/images/services/Rectangle 18.png";
-import "app/styles/modules/serviceList.css";
+import "app/styles/modules/service.css";
 
 type ServiceType = {
   icon: string;

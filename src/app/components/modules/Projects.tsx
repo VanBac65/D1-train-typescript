@@ -2,7 +2,7 @@ import { FC, ReactElement } from "react";
 import Button from "app/components/elements/Button";
 import btnBack from "public/images/button/Back.png";
 import btnNext from "public/images/button/Next.png";
-import "app/styles/modules/projects.css";
+import "app/styles/modules/projectList.css";
 
 type ProjectsType = {
   imgPath: string;

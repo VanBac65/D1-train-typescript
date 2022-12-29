@@ -5,7 +5,7 @@ import twitter from "public/images/footer/Vector-2.png";
 import Logo from "app/components/elements/Logo";
 import Button from "app/components/elements/Button";
 import Input from "app/components/elements/Input";
-import "app/styles/modules/footer.css";
+import "app/styles/modules/footerPage.css";
 
 const networks = [facebook, instagram, twitter];
 
