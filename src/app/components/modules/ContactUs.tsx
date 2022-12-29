@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import Button from "app/components/elements/Button";
-import "app/styles/modules/ContactUs.css";
+import "app/styles/modules/contactUs.css";
 
 type StatsType = {
   icon: string;
@@ -33,7 +33,7 @@ const ContactUs: FC<ContactProps> = ({ statList }): ReactElement => {
           Our company has been the leading provided construction services to
           clients throughout the USA since 1988.
         </p>
-        <Button item={{ title: "Contact Us" }} />
+        <Button>Contact Us</Button>
       </div>
     </div>
   );

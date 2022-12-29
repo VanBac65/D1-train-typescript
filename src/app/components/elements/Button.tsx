@@ -1,24 +1,18 @@
 import { FC, ReactElement } from "react";
-import "app/styles/elements/Button.css";
+import "app/styles/elements/button.css";
 
-type ButtonType = {
-  title: string;
-  icon?: string;
-};
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode;
+}
 
-type ButtonProps = {
-  item: ButtonType;
-};
-
-const Button: FC<ButtonProps> = ({ item }): ReactElement => {
+const Button: FC<ButtonProps> = ({ children, ...props }): ReactElement => {
+  const handleBackHome = () => {
+    window.scroll(0, 0);
+  };
   return (
-    <a href="/">
-      <button>
-        {item.title === "Back" && <img src={item.icon} alt="" />}
-        <label>{item.title}</label>
-        {item.title === "Next" && <img src={item.icon} alt="" />}
-      </button>
-    </a>
+    <button onClick={handleBackHome} {...props}>
+      {children}
+    </button>
   );
 };
 

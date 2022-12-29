@@ -4,7 +4,8 @@ import instagram from "public/images/footer/Vector-1.png";
 import twitter from "public/images/footer/Vector-2.png";
 import Logo from "app/components/elements/Logo";
 import Button from "app/components/elements/Button";
-import "app/styles/modules/Footer.css";
+import Input from "app/components/elements/Input";
+import "app/styles/modules/footer.css";
 
 const networks = [facebook, instagram, twitter];
 
@@ -26,16 +27,12 @@ const Footer: FC = (): ReactElement => {
         </div>
         <div className="footer-right">
           <p>NEWSLETTER:</p>
-          <input type="text" placeholder="Your email here" />
-          <Button item={{ title: "Subscribe" }} />
+          <Input placeholder="Your email here" />
+          <Button>Submit</Button>
           <p>SOCIAL:</p>
           <div className="social-imgs">
             {networks.map((item: string, index: number): ReactElement => {
-              return (
-                <>
-                  <img src={item} alt="" key={index} />
-                </>
-              );
+              return <img src={item} alt="" key={index} />;
             })}
           </div>
         </div>

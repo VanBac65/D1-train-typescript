@@ -1,4 +1,4 @@
-import { FC, ReactElement } from "react";
+import { FC, ReactElement, useEffect } from "react";
 import ContactUs from "app/components/modules/ContactUs";
 import Footer from "app/components/modules/Footer";
 import Header from "app/components/modules/HeaderContainer";
@@ -12,11 +12,17 @@ import backGroundImage from "public/images/banner/Hero.png";
 import dataStats from "app/const/stats";
 import dataProjects from "app/const/projects";
 import dataReasons from "app/const/reasons";
-
-import "app/styles/home/Home.css";
+import FormUser from "app/components/modules/FormUser";
+import "app/styles/home/home.css";
 
 const navProjects = ["All", "Commercial", "Residential", "Other"];
 const navHeader = ["Home", "About Us", "Projects", "Services", "Contact Us"];
+const inputPlaceholder = [
+  "Your Name",
+  "Email",
+  "Reason for Contacting",
+  "Phone",
+];
 
 const Home: FC = (): ReactElement => {
   return (
@@ -40,12 +46,13 @@ const Home: FC = (): ReactElement => {
             seeking quality, innovation and reliability when building in the
             U.S.
           </p>
-          <Button item={{ title: "More on Our History" }} />
+          <Button>More on Our History</Button>
         </div>
       </div>
       <ServiceList services={dataServices} />
       <ContactUs statList={dataStats} />
       <Projects menu={navProjects} projects={dataProjects} />
+      <FormUser items={inputPlaceholder} />
       <Footer />
     </div>
   );

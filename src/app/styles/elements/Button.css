@@ -1,15 +1,10 @@
-a {
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-}
-a img {
+img {
   position: relative;
   top: 2px;
   margin-right: 5px;
 }
 
-a button {
+button {
   border: none;
   color: #fff;
 }

@@ -1,6 +1,6 @@
 import { FC, ReactElement } from "react";
 import Logo from "app/components/elements/Logo";
-import "app/styles/modules/HeaderContainer.css";
+import "app/styles/modules/headerContainer.css";
 
 type MenuHeaderProps = {
   menu: Array<string>;

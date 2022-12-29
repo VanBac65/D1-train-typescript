@@ -2,7 +2,7 @@ import { FC, ReactElement } from "react";
 import Button from "app/components/elements/Button";
 import btnBack from "public/images/button/Back.png";
 import btnNext from "public/images/button/Next.png";
-import "app/styles/modules/Projects.css";
+import "app/styles/modules/projects.css";
 
 type ProjectsType = {
   imgPath: string;
@@ -43,8 +43,14 @@ const Projects: FC<ProjectsProps> = ({ menu, projects }): ReactElement => {
               </div>
             );
           })}
-          <Button item={{ title: "Back", icon: btnBack }} />
-          <Button item={{ title: "Back", icon: btnNext }} />
+          <Button>
+            <img src={btnBack} alt="" />
+            Back
+          </Button>
+          <Button>
+            Next
+            <img src={btnNext} alt="" />
+          </Button>
         </div>
       </div>
     </div>

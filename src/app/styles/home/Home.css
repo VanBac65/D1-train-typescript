@@ -6,19 +6,6 @@
   font-size: 14px;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-a label:hover {
-  cursor: pointer;
-}
-
 button:hover {
   cursor: pointer;
 }
@@ -40,15 +27,9 @@ button:hover {
   position: relative;
 }
 
-.about-us a {
-  display: block;
-  width: max-content;
+.about-us button {
   margin-left: 10%;
-  border-radius: 4px;
   margin-bottom: 10%;
-}
-
-.about-us a button {
   color: #2947a9;
   width: max-content;
   font-size: 14px;

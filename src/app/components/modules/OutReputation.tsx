@@ -1,5 +1,5 @@
 import { FC, ReactElement } from "react";
-import "app/styles/modules/OutReputation.css";
+import "app/styles/modules/outReputation.css";
 
 type ReasonType = {
   icon: string;
