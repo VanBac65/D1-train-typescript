@@ -1,7 +1,6 @@
 import { FC, ReactElement } from "react";
-import dataStats from "app/const/stats";
-import "app/styles/modules/ContactUs.css";
-import Button from "../elements/Button";
+import Button from "app/components/elements/Button";
+import "app/styles/modules/contact.css";
 
 type StatsType = {
   icon: string;
@@ -9,25 +8,21 @@ type StatsType = {
   name: string;
 };
 
-const ContactUs: FC = (): ReactElement => {
-  const Stat: FC<StatsType> = (stat: StatsType): ReactElement => {
-    return (
-      <>
-        <h1>{stat.number}</h1>
-        <span></span>
-        <label>{stat.name}</label>
-        <img src={stat.icon} alt="" />
-      </>
-    );
-  };
+type ContactProps = {
+  statList: StatsType[];
+};
 
+const ContactUs: FC<ContactProps> = ({ statList }): ReactElement => {
   return (
     <div className="contact-us">
       <div className="contact-us-left">
-        {dataStats.map((stat: StatsType, index: number): ReactElement => {
+        {statList.map((stat: StatsType, index: number): ReactElement => {
           return (
             <div className="stat" key={index}>
-              <Stat {...stat} />
+              <h1>{stat.number}</h1>
+              <span></span>
+              <label>{stat.name}</label>
+              <img src={stat.icon} alt="" />
             </div>
           );
         })}
@@ -38,7 +33,7 @@ const ContactUs: FC = (): ReactElement => {
           Our company has been the leading provided construction services to
           clients throughout the USA since 1988.
         </p>
-        <Button title="Contact Us" />
+        <Button>Contact Us</Button>
       </div>
     </div>
   );

@@ -1,20 +1,18 @@
 import { FC, ReactElement } from "react";
 import Logo from "app/components/elements/Logo";
-import "app/styles/modules/HeaderContainer.css";
+import "app/styles/modules/header.css";
 
-const navHeader: string[] = [
-  "Home",
-  "About Us",
-  "Projects",
-  "Services",
-  "Contact Us",
-];
-const Header: FC = (): ReactElement => {
-  const HeaderNav: FC = (): ReactElement => {
-    return (
+type MenuHeaderProps = {
+  menu: Array<string>;
+};
+
+const Header: FC<MenuHeaderProps> = ({ menu }): ReactElement => {
+  return (
+    <div className="header">
+      <Logo />
       <div className="header-nav">
         <ul>
-          {navHeader.map((item: string, index: number): ReactElement => {
+          {menu.map((item: string, index: number): ReactElement => {
             return (
               <li className="nav-item" key={index}>
                 {item}
@@ -23,12 +21,6 @@ const Header: FC = (): ReactElement => {
           })}
         </ul>
       </div>
-    );
-  };
-  return (
-    <div className="header">
-      <Logo />
-      <HeaderNav />
     </div>
   );
 };

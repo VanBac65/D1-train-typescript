@@ -1,3 +1,23 @@
+.home {
+  margin: auto;
+  width: 1054px;
+  max-width: 1054px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner > img {
+  width: 100%;
+}
+
 .about-us {
   margin-top: 10%;
   position: relative;
@@ -7,15 +27,9 @@
   position: relative;
 }
 
-.about-us a {
-  display: block;
-  width: max-content;
+.about-us button {
   margin-left: 10%;
-  border-radius: 4px;
   margin-bottom: 10%;
-}
-
-.about-us a button {
   color: #2947a9;
   width: max-content;
   font-size: 14px;

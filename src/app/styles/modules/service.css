@@ -1,0 +1,56 @@
+.services {
+  width: 100%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f6f8f7;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.service {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  padding: 1% 7%;
+  margin: 2% 2%;
+  font-size: 20px;
+}
+
+.service-1 {
+  background-color: #ffffff;
+  color: #2947a9;
+}
+
+.service-2 {
+  background-color: #2947a9;
+  color: #ffffff;
+}
+
+.service-underline {
+  color: #e0e3eb !important;
+  width: 45px;
+  height: 2px;
+  margin: auto;
+}
+
+h6 {
+  margin: 20% 0;
+  text-align: center;
+}
+
+.service-content {
+  width: max-content;
+  height: max-content;
+}
+
+.service-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 10px auto;
+}
