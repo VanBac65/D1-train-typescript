@@ -1,21 +1,12 @@
 import { FC, ReactElement } from "react";
-import "app/styles/elements/button.css";
+import "app/styles/elements/buttonPage.css";
 
-type ButtonType = {
-  title: string;
-  icon?: string;
-};
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode;
+}
 
-const Button: FC<ButtonType> = ({ title, icon }: ButtonType): ReactElement => {
-  return (
-    <a href="/">
-      <button>
-        {title === "Back" && <img src={icon} alt="" />}
-        <label>{title}</label>
-        {title === "Next" && <img src={icon} alt="" />}
-      </button>
-    </a>
-  );
+const Button: FC<ButtonProps> = ({ children, ...props }): ReactElement => {
+  return <button {...props}>{children}</button>;
 };
 
 export default Button;

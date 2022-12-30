@@ -25,18 +25,15 @@
   color: #525b7a;
 }
 
-.contact-us-right a {
+.contact-us-right button {
   border-radius: 4px;
   margin-top: 40px;
-}
-
-.contact-us-right a button {
   color: #ffffff;
   padding: 11px 30px;
   border: none;
   background-color: #2947a9;
   border-radius: 4px;
-  width: 100%;
+  width: 60%;
 }
 
 .stat {
@@ -112,6 +109,6 @@
 }
 
 .stat:nth-child(4) img {
-  bottom: -30px;
+  top: 75px;
   right: -30px;
 }

@@ -1,0 +1,96 @@
+.home {
+  margin: auto;
+  width: 1054px;
+  max-width: 1054px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner > img {
+  width: 100%;
+}
+
+.about-us {
+  margin-top: 10%;
+  position: relative;
+}
+
+.about-us img {
+  position: relative;
+}
+
+.about-us p:nth-child(2),
+.about-us p:nth-child(3) {
+  padding-right: 10%;
+}
+
+.about-us button {
+  margin-left: 10%;
+  margin-bottom: 10%;
+  color: #2947a9;
+  width: max-content;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #fff;
+}
+
+.about-us-description {
+  position: absolute;
+  right: 0;
+  top: 46%;
+  transform: translateY(-50%);
+  z-index: 2;
+  max-width: 35%;
+  background-color: #2947a9;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.about-us-description h2 {
+  padding-top: 5%;
+  padding-left: 10%;
+  font-weight: 700;
+}
+
+.about-us-description p {
+  padding-left: 10%;
+}
+
+.about-us-description > p:nth-child(3) {
+  padding-bottom: 15%;
+}
+
+.consultation {
+  background-image: url("public/images/consultation/consultation.png");
+  width: 100%;
+  height: 220px;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.consultation-text {
+  margin: 60px 50px;
+  color: #fff;
+}
+
+.consultation button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  max-height: 40px;
+  width: 170px;
+  position: relative;
+  top: 90px;
+  right: 80px;
+}
